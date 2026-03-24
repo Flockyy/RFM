@@ -2,6 +2,28 @@
 
 Customer segmentation project using the **RFM (Recency, Frequency, Monetary)** methodology on the Online Retail dataset.
 
+## Commit history
+
+```mermaid
+gitGraph
+   commit id: "Init repo & .gitignore"
+   commit id: "Acquisition données Online Retail II"
+   branch data-cleaning
+   checkout data-cleaning
+   commit id: "Nettoyage des données"
+   branch rfm-analysis
+   checkout rfm-analysis
+   commit id: "Calcul métriques RFM & segmentation"
+   branch visualization
+   checkout visualization
+   commit id: "Visualisation & interprétation"
+   checkout main
+   merge data-cleaning id: "Merge data-cleaning"
+   merge rfm-analysis id: "Merge rfm-analysis"
+   merge visualization id: "Merge visualization"
+   commit id: "Documentation & rapport RFM"
+```
+
 ## Project structure
 
 ```
